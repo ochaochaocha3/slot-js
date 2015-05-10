@@ -1,0 +1,60 @@
+.main-container {
+  width: 680px;
+  margin: 40px auto 60px;
+  padding: 20px;
+  background-color: #068F24;
+  color: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 24px;
+}
+
+a:link, a:visited {
+  color: #EDA45B;
+}
+
+a:hover {
+  color: #F6D0AB;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.current-score {
+  font-size: 150%;
+}
+
+.updating-max-score {
+  color: #EDA45B;
+}
+
+.slot {
+  margin: 0.1em 0;
+}
+
+.slot-num {
+  display: inline-block;
+  width: 80px;
+  margin: 0 12px;
+  background-color: #40361F;
+  border: 8px solid #C5C5CC;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  color: #EA6019;
+  font-size: 72px;
+}
+
+.controller {
+  margin: 1em 0;
+}
+
+.stop-button {
+  width: 96px;
+  margin: 0 12px;
+  font-size: 24px;
+}
+
+.start-button {
+  width: 160px;
+  font-size: 24px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>スロットマシン</title>
+    <link rel="stylesheet" href="slot.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>スロットマシン</h1>
+
+      <p>点数 <span id="current-score" class="current-score">0</span>（最大 <span id="max-score">0</span>）</p>
+
+      <div class="slot">
+        <span id="slot-0" class="slot-num" data-id="0">1</span>
+        <span id="slot-1" class="slot-num" data-id="1">2</span>
+        <span id="slot-2" class="slot-num" data-id="2">3</span>
+      </div>
+
+      <div class="controller">
+        <button type="button" id="stop-0" class="stop-button" disabled data-id="0">止める</button>
+        <button type="button" id="stop-1" class="stop-button" disabled data-id="1">止める</button>
+        <button type="button" id="stop-2" class="stop-button" disabled data-id="2">止める</button>
+      </div>
+
+      <div class="controller">
+        <button type="button" id="start" class="start-button">スタート！</button>
+      </div>
+
+      <p><a href="/">戻る</a></p>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">var SLOT = {};</script>
+    <script src="js/slot.js"></script>
+    <script src="js/slotMachine.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
