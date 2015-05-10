@@ -1,10 +1,12 @@
 /*global $, SLOT */
+
 $(function () {
   'use strict';
 
   var
     machine = SLOT.newSlotMachine(),
-    FPS = 25,
+    FPS = 40,
+    updateInterval = 1000 / FPS,
     $slots = [$('#slot-0'), $('#slot-1'), $('#slot-2')],
     $stops = [$('#stop-0'), $('#stop-1'), $('#stop-2')],
     $start = $('#start'),
@@ -18,7 +20,7 @@ $(function () {
       if (machine.allSlotsAreStopped()) {
         timer = null;
       } else {
-        timer = window.setTimeout(tick, FPS);
+        timer = window.setTimeout(tick, updateInterval);
       }
     };
 
@@ -67,7 +69,7 @@ $(function () {
       slot.num = Math.floor(Math.random() * 10);
     });
     machine.start();
-    timer = window.setTimeout(tick, FPS);
+    timer = window.setTimeout(tick, updateInterval);
   });
 
   $start.prop('disabled', false);
